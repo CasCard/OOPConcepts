@@ -1,20 +1,13 @@
-class Computer:
+class Car:
     def __init__(self):
-        self.name="Abel"
-        self.age=18
-
-    def compare(self,other):
-        if self.age==other.age:
-            return True
-        else:
-            return False
+        self.mil=10;
+        self.com="BMW"
 
 
-c1=Computer()
-c1.age=30
-c2=Computer()
+c1=Car()
+c2=Car()
 
-if c1.compare(c2):
-    print("They are same")
-else:
-    print("They are different")
+c2.mil=8
+
+print(c1.com,c1.mil)
+print(c2.com,c2.mil)
