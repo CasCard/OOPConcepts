@@ -1,17 +1,27 @@
-class Car:
-    wheels=4
+class student:
 
-    def __init__(self):
-        self.mil=10;
-        self.com="BMW"
+    school="Telusko"
+
+    def __init__(self,m1,m2,m3):
+        self.m1=m1
+        self.m2 = m2
+        self.m3 = m3
+
+    def avg(self):
+        return (self.m1+self.m2+self.m3)/3
+
+    def get_m1(self):
+        return self.m1
+
+    def set_m1(self,value):
+        self.m1=value
 
 
-c1=Car()
-c2=Car()
+s1=student(34,67,32)
+s2=student(59,32,12)
 
-c2.mil=8
+print(s1.avg())
+print(s2.avg())
+# Accessors and mutators
 
-Car.wheels=5
 
-print(c1.com,c1.mil,c1.wheels)
-print(c2.com,c2.mil,c2.wheels)
